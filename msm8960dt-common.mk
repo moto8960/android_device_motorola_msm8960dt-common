@@ -181,7 +181,6 @@ PRODUCT_PACKAGES += \
 
 # Wifi
 PRODUCT_PACKAGES += \
-    dhcpcd.conf \
     hostapd \
     libQWiFiSoftApCfg \
     wpa_supplicant \
