@@ -434,6 +434,11 @@ service bootmodem /system/bin/bootmodem
     oneshot
     disabled
 
+service config_bt_addr /system/bin/btnvtool -O
+    class core
+    user bluetooth
+    group bluetooth radio
+
 on property:bluetooth.hciattach=false
     setprop bluetooth.status off
 
