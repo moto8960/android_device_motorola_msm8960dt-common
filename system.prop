@@ -14,6 +14,7 @@ ro.qc.sdk.audio.ssr=false
 qcom.bt.le_dev_pwr_class=1
 ro.bluetooth.dun=false
 ro.bluetooth.sap=false
+qcom.bluetooth.soc=smd
 ro.bluetooth.hfp.ver=1.6
 ro.qualcomm.bt.hci_transport=smd
 ro.qualcomm.bluetooth.ftp=true
