@@ -5,9 +5,10 @@ LOCAL_PATH := $(call my-dir)
 include $(CLEAR_VARS)
 
 LOCAL_SRC_FILES := \
-    gui/SensorManager.cpp
+    gui/SensorManager.cpp \
+    GraphicBuffer.cpp
 
-LOCAL_SHARED_LIBRARIES := libutils libgui liblog libbinder
+LOCAL_SHARED_LIBRARIES := libutils libgui libui liblog libbinder
 LOCAL_MODULE := libshim_camera
 LOCAL_MODULE_TAGS := optional
 
