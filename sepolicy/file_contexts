@@ -29,7 +29,6 @@
 /data/com(/.*)?                                                                     u:object_r:charge_only_mode_data_file:s0
 
 # Bluetooth
-/dev/smd3                                                                           u:object_r:hci_attach_dev:s0
 /persist/.bt_nv.bin                                                                 u:object_r:persist_bluetooth_file:s0
 /system/bin/hci_qcomm_init                                                          u:object_r:hci_attach_exec:s0
 
