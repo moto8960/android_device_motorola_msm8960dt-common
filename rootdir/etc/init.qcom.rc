@@ -426,7 +426,8 @@ on property:net.tethering.on=1
 
 service batt_health /system/bin/batt_health
     class main
-    group mot_pwric
+    user root
+    group root mot_pwric
 
 service bootmodem /system/bin/bootmodem
     user shell
@@ -447,8 +448,8 @@ on property:bluetooth.hciattach=true
 
 service hciattach /system/bin/sh /system/etc/init.qcom.bt.sh
     class late_start
-    user bluetooth
-    group bluetooth net_bt_admin
+    user root
+    group root bluetooth net_bt_admin
     seclabel u:r:bluetooth_loader:s0
     disabled
     oneshot
@@ -461,6 +462,7 @@ service irsc_util /system/bin/irsc_util "/etc/sec_config"
 service mmi-boot-sh /system/bin/sh /system/etc/init.mmi.boot.sh
     class core
     user root
+    group root
     seclabel u:r:mmi_boot:s0
     oneshot
 
@@ -616,5 +618,5 @@ on start-charging
 
 service charge_only_mode /system/bin/charge_only_mode
     user root
-    group graphics system input
+    group root graphics system input
     disabled
